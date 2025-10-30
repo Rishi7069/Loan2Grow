@@ -48,7 +48,7 @@ export default function NewTaskDialog({ open, onClose }) {
           <Controller name='status' control={control} render={({ field }) => (
             <TextField {...field} margin='dense' label='Status' fullWidth />
           )} />
-          <Box sx={{ mt: 1, fontSize: 12, color: 'text.secondary' }}>Title required, description >=10 chars, assignee required.</Box>
+         
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose}>Cancel</Button>
