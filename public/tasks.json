@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "Design landing page",
+    "description": "Create mockups for new landing page.",
+    "status": "todo",
+    "priority": "high",
+    "assignee": "Asha"
+  },
+  {
+    "id": "2",
+    "title": "API integration",
+    "description": "Integrate payments API.",
+    "status": "inprogress",
+    "priority": "medium",
+    "assignee": "Ravi"
+  },
+  {
+    "id": "3",
+    "title": "Write docs",
+    "description": "Prepare developer docs.",
+    "status": "done",
+    "priority": "low",
+    "assignee": "Priya"
+  },
+  {
+    "id": "4",
+    "title": "User testing",
+    "description": "Run user testing sessions.",
+    "status": "todo",
+    "priority": "medium",
+    "assignee": "Asha"
+  }
+]

@@ -1,0 +1,54 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor & OS junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+logs/
+debug.log
+
+# Cache
+.cache/
+vite-cache/
+coverage/
+*.tgz
+
+# Local test & temp
+temp/
+tmp/
+*.tmp
+
+# Optional lock files (uncomment one if you use it)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Windows specific
+ehthumbs.db
+Desktop.ini
+
+# macOS specific
+.AppleDouble
+.LSOverride
+
+# GitHub Codespaces / VS Code
+.history/
