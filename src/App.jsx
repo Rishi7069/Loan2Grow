@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Container, AppBar, Toolbar, Typography, Button, Box } from '@mui/material'
 import Board from './components/Board'
 import NewTaskDialog from './components/NewTaskDialog'
@@ -12,7 +12,15 @@ export default function App() {
   const [open, setOpen] = useState(false)
   const [filters, setFilters] = useState({ q: '', priority: 'all', assignee: 'all' })
 
-  useEffect(() => { dispatch(loadTasks()) }, [dispatch])
+  const tasks = useSelector(state => state.tasks.items)
+
+  useEffect(() => {
+    if (!tasks || tasks.length === 0) {
+      dispatch(loadTasks())
+    }
+  }, [dispatch, tasks])
+
+
 
   return (
     <>

@@ -9,6 +9,7 @@ export default function TaskCard({ task }) {
   const [anchorEl, setAnchorEl] = useState(null)
 
   const handleMenu = (e) => setAnchorEl(e.currentTarget)
+  console.log(anchorEl);
   const closeMenu = () => setAnchorEl(null)
 
   const changeStatus = (status) => {
